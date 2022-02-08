@@ -1,7 +1,7 @@
 # Development
 
 ```
-cd ping-pong-test
+cd collision_detection
 npm install
 npm start
 ```
