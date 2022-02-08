@@ -11,16 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wolwer1nE/ping-pong-test.git"
+    "url": "git+https://github.com/mmcs-gd/collision_detection_2022.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Wolwer1nE/ping-pong-test/issues"
+    "url": "https://github.com/mmcs-gd/collision_detection_2022/issues"
   },
-  "homepage": "https://github.com/Wolwer1nE/ping-pong-test#readme",
+  "homepage": "https://github.com/mmcs-gd/collision_detection_2022#readme",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "jest": "^24.9.0",
-    "parcel": "^1.12.3"
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "jest": "^27.5.1",
+    "parcel": "^2.2.1"
   }
 }
