@@ -16,14 +16,18 @@ function draw(tFrame) {
 
     // clear canvas
     context.clearRect(0, 0, canvas.width, canvas.height)
-    gameState.figures.each((figure)=>{
-        context.rect(figure)
-    })
     // draw
+    context.fillStyle = "rgb(0, 0, 200)"
+    gameState.rects.forEach((figure)=>{
+        context.fillRect(figure.x, figure.y, figure.w, figure.h)
+    })
 }
 
 function update(tick) {
-
+    gameState.rects.forEach((figure)=>{
+        figure.x += figure.speed.x
+        figure.y += figure.speed.y
+    })
 }
 
 function run(tFrame) {
@@ -52,8 +56,10 @@ function setup() {
     gameState.lastRender = gameState.lastTick
     gameState.tickLength = 15 //ms
 
-    gameState.figures = []
-    gameState.figures.push(new Rectangle(10,10, 30, 30))
+    gameState.rects = []
+    const rectangle = new Rectangle(10,10, 30, 30)
+    rectangle.setSpeed(5, 5)
+    gameState.rects.push(rectangle)
 
 }
 
