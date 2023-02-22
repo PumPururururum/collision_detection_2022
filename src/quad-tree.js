@@ -17,6 +17,7 @@ export default class QuadTree {
         this._children = []
     }
 
+    // todo
     insert(point) {
         return true
     }
@@ -33,6 +34,7 @@ export default class QuadTree {
         return found
     }
 
+    // todo call if the number of elements is too big
     _subdivide() {
     }
 

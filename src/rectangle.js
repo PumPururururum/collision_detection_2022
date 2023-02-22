@@ -8,7 +8,6 @@ export default class Rectangle {
     }
 
     setSpeed(x, y){
-
         this.speed.x = x
         this.speed.y = y
     }
