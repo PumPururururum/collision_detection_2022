@@ -38,7 +38,7 @@ describe('Rectangle.contains()', () => {
         //    │
     })
 
-    it('should returns false if point located on rects left or top border', () => {
+    it('should returns true if point located on rects left or top border', () => {
         expect(rect.contains({x: 2, y: 0})).toBeTruthy()
         expect(rect.contains({x: 0, y: 1})).toBeTruthy()
 
