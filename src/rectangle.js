@@ -4,13 +4,9 @@ export default class Rectangle {
         this.y = y
         this.w = w
         this.h = h
-        this.speed = {x: 0, y: 0}
+       // this.speed = {x: 0, y: 0}
     }
 
-    setSpeed(x, y){
-        this.speed.x = x
-        this.speed.y = y
-    }
     get left() {
         return this.x
     }
